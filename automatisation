@@ -1,0 +1,19 @@
+to automate the execution of the code we can add the following python code to the ipynb:
+
+import time
+def update():
+    while True:
+        time.sleep(5)
+        
+        
+or we can use the cmd to execute a .py file that have the same code ad ipynb, by creating two files
+
+first file: job.cmd (in the cmd we just type job.cmd, and for the source code of the file, we can just run the cmd from the folder were we have the python file, 
+so we need no path, and we can add python.exe to the sys path so we do not need to give the path the python.exe )
+
+#!/bin/sh
+path_to_python.exe/python.exe path_to_python_file/python_script.py 
+
+Second file: python_script.py (has the python code to execute)
+
+P.S. it's better to create a python env were we need to install all the libs, then execute the job.cmd
